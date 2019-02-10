@@ -36,7 +36,7 @@ class ViewController: UIViewController {
         }
         square.isUserInteractionEnabled = true
         self.sliderView.snp.makeConstraints { (make) in
-            make.height.equalTo(0)
+            make.height.equalTo(50)
         }
         self.square.snp.makeConstraints { (make) in
             make.centerX.equalToSuperview()
@@ -132,7 +132,7 @@ class ViewController: UIViewController {
                         make.centerY.equalToSuperview().offset(-100)
                     }
                     self.sliderView.snp.remakeConstraints({ (make) in
-                        make.height.equalTo(0)
+                        make.height.equalTo(50)
                     })
                 }
                 UIView.animate(withDuration: 1, delay: 0, options: .curveEaseInOut, animations: {
